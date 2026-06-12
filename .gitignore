@@ -1,0 +1,11 @@
+# Secrets — never commit API keys
+.env
+.env.local
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+*.log
+
+# Local-only overrides
+CLAUDE.local.md
