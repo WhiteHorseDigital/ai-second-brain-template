@@ -1,31 +1,53 @@
 # Setup Interview Prompt
 
-Paste everything below the line into Claude Code on a fresh copy of this template. It will interview you, then populate the placeholder files. This is Phase 2 of the README.
+Paste everything below the line into Claude Code on a fresh copy of this template. It will interview you one question at a time, then populate the `memory/` files and the rest of the placeholder files. This is Phase 2 of the README.
 
 ---
 
-You are setting yourself up as my executive assistant. This project is a template with placeholder files (anything written as `{{LIKE_THIS}}`). Your job is to interview me, then fill in every placeholder across `CLAUDE.md` and the `context/` files with my real information.
+You're going to help me bootstrap my AI second brain so that you start every future session knowing who I am, who I work with, what I'm working on, and how I want you to write.
 
-Interview me one section at a time. Ask follow-up questions if an answer is thin. Do not move to the next section until you have enough. If I say "skip", leave a clear placeholder and move on.
+This project is the home for that memory. It already has a two-tier structure:
 
-Go through these sections in order:
+1. **`CLAUDE.md`** at the root — the hot cache that loads at the start of every session. Keep it concise but complete enough that you can operate from it on the first message.
+2. **`memory/`** — the deeper context files, referenced from `CLAUDE.md`. The scaffold already exists with placeholder files (anything written as `{{LIKE_THIS}}`):
+   - `personal.md` — who I am, work pattern, family
+   - `preferences.md` — voice and working style, blind spots to catch
+   - `glossary.md` — acronyms and shorthand
+   - `goals.md` and `current-priorities.md`
+   - `context/company.md` — the business (add more files here per business unit if I touch several)
+   - `people/team.md`, `people/leadership.md`, `people/direct-reports.md`
+   - `external/relationships.md`
 
-1. **Me** — name, role, location, time zone, how I work, what I am responsible for.
-2. **The business** — what the company does, stage, offers and pricing, who the customers are, how engagements or work typically start.
-3. **The team** — key people, their roles, what to loop each of them in for, how we communicate.
-4. **Priorities** — what I am focused on for roughly the next 30 days.
-5. **Goals** — quarterly direction and targets for the current quarter.
-6. **Communication style** — how I like things written (format, tone for internal vs external, things to never do).
-7. **What I want help with** — recurring tasks that eat my time, what I would hand off first, workflows worth turning into skills.
+Your job is to interview me, then fill in every relevant placeholder. Only keep the files that apply to me; delete the ones that don't.
 
-When the interview is done:
+## How to run this process
 
-- Write `context/me.md`, `context/work.md`, `context/team.md`, `context/current-priorities.md`, and `context/goals.md` from my answers.
-- Update `.claude/rules/communication-style.md` with my preferences.
-- Fill in the placeholders in `CLAUDE.md` (company name, my name, top priority, tools).
-- Add any workflows I mentioned to `.claude/skills-backlog.md`.
-- Create a folder under `projects/` for each active workstream I named, each with a short README (status, dates, key context).
-- Stamp each context file with today's date as "last updated".
-- Do an initial git commit.
+1. **Ask one question at a time.** Wait for my answer before moving on. Never bundle questions.
+2. **Do not make assumptions.** If I haven't told you something, ask. Do not invent.
+3. **Cover, in this order:**
+   - (a) who I am — name, role, employer, team, scope, location, work pattern
+   - (b) family and personal context
+   - (c) my organisation — leadership, direct reports, who I report to, close peers
+   - (d) businesses, products, or portfolio I touch
+   - (e) my active priorities right now
+   - (f) external relationships — vendors, advisors, partners, agencies
+   - (g) tools I use day to day
+   - (h) acronyms and shorthand
+   - (i) voice rules — UK or US English, formatting preferences, words to avoid, opening and closing styles I dislike
+   - (j) working style — how I want you to push back, when to ask questions, what blind spots to catch
+4. **Ask before pulling from other sources.** If you have access to my prior sessions, email, meeting transcripts, or connected tools (Fathom, Slack, Notion, Gmail, a CRM), ask whether I want you to pull from them. Do not pull without permission. Summarise what you found before adding anything to memory.
+5. **Write as you go.** When I finish a section, write the relevant file straight away. Do not batch all the writing to the end. Stamp dated files (`current-priorities.md`) with today's date.
+6. **Update the rest of the template too.** As the answers come in: fill the placeholders in `CLAUDE.md` (company name, my name, top priority, tools); update `.claude/rules/communication-style.md` with my voice rules; add any recurring workflows I mention to `.claude/skills-backlog.md`; create a folder under `projects/` for each active workstream, each with a short README (status, dates, key context).
 
-Then show me a tree view of the folder structure and a short summary of what each file does, so I understand my new setup.
+## After all files are written
+
+7. **Verification pass.** List the final folder structure. Check for contradictions across files. Prove the writing matches my stated voice rules (for example, if I said no em dashes, show there are none). Flag anything still left as a placeholder.
+8. **Profile entry.** Write me a tight Profile entry of around 200 words that I can paste straight into Claude's Settings → Profile field. It should be a personal-layer summary distilled from `CLAUDE.md`, not a copy of it. Cover: who I am, my role, my team, how I want you to communicate with me, my voice rules, and the blind spots I've asked you to catch. Skip the deep team and project detail (that lives in `memory/` and loads when this folder is attached). The Profile block needs to make you useful to me even in personal chats where this folder isn't attached.
+9. **Three closing reminders.** Tell me: (1) how to confirm the memory loads at the start of each future session; (2) when I should ask you to update memory mid-task; (3) how often to run a consolidation pass.
+10. **Initial commit.** Do a git commit of the populated files.
+
+## Posture
+
+Be direct. Push back if my answer is vague or contradicts something I said earlier. This memory will drive how you work with me for months, so getting it right matters more than getting through the questions quickly.
+
+Start with question one: my name, role, employer, and a one-paragraph description of my remit.

@@ -12,7 +12,7 @@ A reusable research skill that goes beyond a basic web search. It loads your bus
 - You want a saved, sourced report rather than a one-off answer in chat.
 
 ## How to run
-1. **Load context.** Read `context/me.md`, `context/work.md`, `context/current-priorities.md`, and `context/goals.md` so the research is framed around what matters now.
+1. **Load context.** Read `memory/personal.md`, `memory/context/company.md`, `memory/current-priorities.md`, and `memory/goals.md` so the research is framed around what matters now.
 2. **Formulate queries.** Break the question into 2-4 focused search queries.
 3. **Search.** Run the searches (web search, or a research API if one is configured in `.env`).
 4. **Synthesize.** Write a concise summary in chat following the communication-style rules.

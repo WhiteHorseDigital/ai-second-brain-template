@@ -1,5 +1,7 @@
 # Team
 
+The internal people I work with day to day.
+
 ## People
 
 | Name | Role | Loop in for |

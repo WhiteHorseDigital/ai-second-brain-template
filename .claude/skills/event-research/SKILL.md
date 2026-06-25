@@ -13,7 +13,7 @@ A research skill tuned for events work. Use it to scope artists and talent, vet 
 - Sizing up a new city or market for an expansion or tour.
 
 ## How to run
-1. **Load context.** Read `context/work.md` and `context/current-priorities.md` so the research is framed around the events currently in the pipeline.
+1. **Load context.** Read `memory/context/company.md` and `memory/current-priorities.md` so the research is framed around the events currently in the pipeline.
 2. **Identify the angle.** Talent, vendor, venue, or market. Each needs different queries.
 3. **Search across 3-4 angles.** For example, for a city: the scene and key players, venue options and capacity, vendor and supplier availability, and any application or permit process.
 4. **Synthesize** a short summary in chat (communication-style rules apply).

@@ -1,5 +1,7 @@
 # {{COMPANY_NAME}}
 
+_One file per business unit or portfolio I touch. This is the main one. Add more files in this folder if I work across several._
+
 ## What we are
 {{WHAT_THE_COMPANY_DOES}}
 

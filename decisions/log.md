@@ -7,4 +7,4 @@ Format:
 
 ---
 
-[{{DATE}}] DECISION: Stood up the executive assistant on this template. | REASONING: Centralize context, skills, and decisions so the assistant compounds over time. | CONTEXT: Initial setup.
+[{{DATE}}] DECISION: Stood up the AI second brain on this template. | REASONING: Centralize memory, skills, and decisions so the second brain compounds over time. | CONTEXT: Initial setup.
