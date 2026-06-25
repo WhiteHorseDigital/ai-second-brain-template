@@ -26,5 +26,5 @@ _One file per business unit or portfolio I touch. This is the main one. Add more
 ## Daily tools
 - {{TOOL}}
 
-## Integrations connected to Claude Code
+## Connectors and integrations in Cowork
 {{MCP_OR_OTHER_INTEGRATIONS}}

@@ -1,6 +1,6 @@
 # Setup Interview Prompt
 
-Paste everything below the line into Claude Code on a fresh copy of this template. It will interview you one question at a time, then populate the `memory/` files and the rest of the placeholder files. This is Phase 2 of the README.
+Paste everything below the line into Claude Cowork, once this folder is set up as a project. It will interview you one question at a time, then populate the `memory/` files and the rest of the placeholder files. This is Phase 2 of the README.
 
 ---
 
@@ -35,7 +35,7 @@ Your job is to interview me, then fill in every relevant placeholder. Only keep 
    - (h) acronyms and shorthand
    - (i) voice rules — UK or US English, formatting preferences, words to avoid, opening and closing styles I dislike
    - (j) working style — how I want you to push back, when to ask questions, what blind spots to catch
-4. **Ask before pulling from other sources.** If you have access to my prior sessions, email, meeting transcripts, or connected tools (Fathom, Slack, Notion, Gmail, a CRM), ask whether I want you to pull from them. Do not pull without permission. Summarise what you found before adding anything to memory.
+4. **Ask before pulling from other sources.** If I have connected tools in Cowork (Gmail, Calendar, Drive, Slack, Notion, a CRM, Fathom) or you can see prior sessions, ask whether I want you to pull from them. Do not pull without permission. Summarise what you found before adding anything to memory.
 5. **Write as you go.** When I finish a section, write the relevant file straight away. Do not batch all the writing to the end. Stamp dated files (`current-priorities.md`) with today's date.
 6. **Update the rest of the template too.** As the answers come in: fill the placeholders in `CLAUDE.md` (company name, my name, top priority, tools); update `.claude/rules/communication-style.md` with my voice rules; add any recurring workflows I mention to `.claude/skills-backlog.md`; create a folder under `projects/` for each active workstream, each with a short README (status, dates, key context).
 
@@ -43,8 +43,8 @@ Your job is to interview me, then fill in every relevant placeholder. Only keep 
 
 7. **Verification pass.** List the final folder structure. Check for contradictions across files. Prove the writing matches my stated voice rules (for example, if I said no em dashes, show there are none). Flag anything still left as a placeholder.
 8. **Profile entry.** Write me a tight Profile entry of around 200 words that I can paste straight into Claude's Settings → Profile field. It should be a personal-layer summary distilled from `CLAUDE.md`, not a copy of it. Cover: who I am, my role, my team, how I want you to communicate with me, my voice rules, and the blind spots I've asked you to catch. Skip the deep team and project detail (that lives in `memory/` and loads when this folder is attached). The Profile block needs to make you useful to me even in personal chats where this folder isn't attached.
-9. **Three closing reminders.** Tell me: (1) how to confirm the memory loads at the start of each future session; (2) when I should ask you to update memory mid-task; (3) how often to run a consolidation pass.
-10. **Initial commit.** Do a git commit of the populated files.
+9. **Set up my morning plan.** Run "draft my morning plan" once now so I can see it work against the memory you just wrote. Then walk me through making it recurring: in this project, open **Scheduled Tasks**, add a task, and paste the prompt from `templates/morning-plan-prompt.md`, set to run on weekday mornings. Offer to adjust the prompt to my routine first.
+10. **Three closing reminders.** Tell me: (1) how to confirm the memory loads at the start of each future session (it loads automatically when this folder is the active Cowork project); (2) when I should ask you to update memory mid-task; (3) how often to run a consolidation pass.
 
 ## Posture
 

@@ -13,4 +13,4 @@ Workflows worth turning into skills once they recur. Promote one when you have d
 - **Inbound triage** — sort supplier / artist / partner email into action buckets.
 
 ## How to promote a backlog item to a skill
-Switch Claude Code to plan mode and say: "Build me a skill that does X. Here is when I would use it and the steps it should follow." Review the plan, accept, then test it and refine.
+In Cowork, describe the skill in plain language: "Build me a skill that does X. Here is when I would use it and the steps it should follow." Review what it proposes, then test it and refine.
